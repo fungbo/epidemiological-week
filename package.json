@@ -1,6 +1,6 @@
 {
   "name": "epidemiological-week",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An npm package to calucate epi week and year",
   "main": "./src/index.js",
   "keywords": [
