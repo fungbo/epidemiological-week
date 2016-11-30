@@ -13,6 +13,10 @@
   "dependencies": {
     "moment": "^2.17.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fungbo/epidemiological-week.git"
+  },
   "devDependencies": {
     "del": "^2.0.2",
     "gulp": "gulpjs/gulp#4ed9a4a3275559c73a396eff7e1fde3824951ebb",
