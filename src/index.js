@@ -8,7 +8,7 @@ const WEEKDAYS = 7;
 const MAX_EPI_WEEKS_IN_ONE_YEAR = 52;
 const INVALID_VALUE = -1;
 
-export default function epi(dateStr, format = 'YYYY-MM-DD') {
+exports.epi = function (dateStr, format = 'YYYY-MM-DD') {
   const date = moment(dateStr, format);
   if (!date.isValid()) {
     throw new Error("date is invalid");
@@ -44,7 +44,7 @@ export default function epi(dateStr, format = 'YYYY-MM-DD') {
 
   return firstDayLastYear.isSame(firstEpiWeekDayLastYear) ?
   {year: INVALID_VALUE, week: INVALID_VALUE} : {year: year - 1, week: 52};
-}
+};
 
 function containsSaturdayInFirstWeek(date) {
   const firstDay = date.clone().startOf(YEAR);
