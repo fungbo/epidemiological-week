@@ -59,6 +59,7 @@
     "babel-preset-es2015": "^6.2.0"
   },
   "scripts": {
+    "build": "gulp",
     "test": "gulp test"
   },
   "eslintConfig": {

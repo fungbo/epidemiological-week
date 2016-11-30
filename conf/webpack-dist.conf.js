@@ -43,9 +43,6 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin({
-      template: conf.path.src('index.html')
-    }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     }),
@@ -53,15 +50,13 @@ module.exports = {
       compress: {unused: true, dead_code: true, warnings: false} // eslint-disable-line camelcase
     }),
     new ExtractTextPlugin('index-[contenthash].css'),
-    new webpack.optimize.CommonsChunkPlugin({name: 'vendor'})
   ],
   postcss: () => [autoprefixer],
   output: {
-    path: path.join(process.cwd(), conf.paths.dist),
-    filename: '[name]-[hash].js'
+    path: path.join(__dirname, '/../'),
+    filename: 'index.js'
   },
   entry: {
-    app: `./${conf.path.src('index')}`,
-    vendor: Object.keys(pkg.dependencies)
+    app: `./${conf.path.src('index')}`
   }
 };
