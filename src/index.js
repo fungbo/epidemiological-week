@@ -8,7 +8,7 @@ const WEEKDAYS = 7;
 const MAX_EPI_WEEKS_IN_ONE_YEAR = 52;
 const INVALID_VALUE = -1;
 
-exports.epi = function (dateStr, format = 'YYYY-MM-DD') {
+exports.calculate = function (dateStr, format = 'YYYY-MM-DD') {
   const date = moment(dateStr, format);
   if (!date.isValid()) {
     throw new Error("date is invalid");
