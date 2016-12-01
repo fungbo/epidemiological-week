@@ -17,6 +17,13 @@ epi.calculate('2016-11-13')  //{year: 2016, week: 46}
 
 epi.calculate('12-31-2006', 'MM-DD-YYYY')  //{year: 2007, week: 1}
 epi.calculate('31-12-2006', 'DD-MM-YYYY')  //{year: 2007, week: 1}
+
+//Special dates
+//These dates can not be found on epi calendar, so for now just give it -1
+epi.calculate('2008-12-28')  //{year: -1, week: -1}
+epi.calculate('2014-12-28')  //{year: -1, week: -1}
+epi.calculate('2009-01-02')  //{year: -1, week: -1}
+epi.calculate('2015-01-03')  //{year: -1, week: -1} 
 ```
 
 >You can find the definition and calendars on [this website](http://www.cmmcp.org/epiweek.htm)   
