@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fungbo/epidemiological-week.svg?branch=master)](https://travis-ci.org/fungbo/epidemiological-week)   
+ 
 An epidemiological week, commonly referred to as an epi week or a CDC week, is simply a standardized method of counting 
 weeks to allow for the comparison of data year after year.
 
