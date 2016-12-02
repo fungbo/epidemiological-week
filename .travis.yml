@@ -8,9 +8,10 @@ node_js:
 
 install:
   - npm install -g gulp-cli
+  - npm install -g codecov
   - npm install
 scripts:
   - npm run test
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - node_modules/.bin/codecov
