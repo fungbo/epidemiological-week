@@ -4,14 +4,10 @@ language:
   - node_js
 
 node_js:
-  - "6.9.1"
+  - stable
 
 install:
   - npm install -g gulp-cli
-  - npm install -g codecov
   - npm install
 scripts:
   - npm run test
-
-after_success:
-  - node_modules/.bin/codecov
